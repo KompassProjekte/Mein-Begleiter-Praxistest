@@ -1,4 +1,4 @@
-const CACHE="mein-begleiter-praxistest-cache-v1-8";
+const CACHE="mein-begleiter-praxistest-cache-v1-8-1";
 const DATEIEN=['./','./index.html','./manifest.webmanifest','./offline.html','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./icons/apple-touch-icon-180.png','./icons/favicon-64.png'];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(DATEIEN))));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(n=>Promise.all(n.filter(x=>x.startsWith("mein-begleiter-praxistest-cache")&&x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));
