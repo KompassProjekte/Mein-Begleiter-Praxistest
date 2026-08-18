@@ -2776,8 +2776,8 @@
               />
             </div>
             <div class="feld">
-              <label for="messUhrzeit">Uhrzeit</label
-              ><input id="messUhrzeit" type="time" />
+              <label for="messUhrzeit">Uhrzeit *</label
+              ><input id="messUhrzeit" type="time" required style="background: #fff9e8"/>
               <span class="hinweis">Wichtig für die chronologische Reihenfolge.</span>
             </div>
             <div class="feld">
@@ -4538,6 +4538,11 @@
           toast("Bitte ein Datum eintragen.");
           return;
         }
+        if (!e.messUhrzeit) {
+  toast("Bitte eine Uhrzeit eintragen.");
+  $("#messUhrzeit").focus();
+  return;
+}
         const i = daten.eintraege.findIndex((x) => x.id === id);
         if (i >= 0) daten.eintraege[i] = e;
         else daten.eintraege.push(e);
