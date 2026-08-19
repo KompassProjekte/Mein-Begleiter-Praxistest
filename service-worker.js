@@ -1,6 +1,69 @@
-const CACHE="mein-begleiter-praxistest-cache-v1-8-3";
-const DATEIEN=['./','./index.html','./manifest.webmanifest','./offline.html','./icons/icon-192.png','./icons/icon-512.png','./icons/icon-maskable-512.png','./icons/apple-touch-icon-180.png','./icons/favicon-64.png'];
-self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(DATEIEN))));
-self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(n=>Promise.all(n.filter(x=>x.startsWith("mein-begleiter-praxistest-cache")&&x!==CACHE).map(x=>caches.delete(x)))).then(()=>self.clients.claim())));
-self.addEventListener('message',e=>{if(e.data?.type==='SKIP_WAITING')self.skipWaiting()});
-self.addEventListener('fetch',e=>{if(e.request.method!=='GET')return;const u=new URL(e.request.url);if(u.origin!==location.origin)return;if(e.request.mode==='navigate'){e.respondWith(fetch(e.request).then(r=>{const k=r.clone();caches.open(CACHE).then(c=>c.put('./index.html',k));return r}).catch(()=>caches.match('./index.html').then(r=>r||caches.match('./offline.html'))));return}e.respondWith(caches.match(e.request).then(r=>r||fetch(e.request).then(n=>{const k=n.clone();caches.open(CACHE).then(c=>c.put(e.request,k));return n}))) });
+const CACHE = 'mein-begleiter-praxistest-cache-v1-8-4';
+const BASIS = '/Mein-Begleiter-Praxistest/';
+const PFLICHTDATEIEN = [
+  BASIS,
+  BASIS + 'index.html',
+  BASIS + 'manifest.webmanifest',
+  BASIS + 'offline.html'
+];
+const OPTIONALE_DATEIEN = [
+  BASIS + 'icons/icon-192.png',
+  BASIS + 'icons/icon-512.png',
+  BASIS + 'icons/icon-maskable-512.png',
+  BASIS + 'icons/apple-touch-icon-180.png',
+  BASIS + 'icons/favicon-64.png'
+];
+
+self.addEventListener('install', event => {
+  event.waitUntil((async () => {
+    const cache = await caches.open(CACHE);
+    await cache.addAll(PFLICHTDATEIEN);
+    await Promise.allSettled(OPTIONALE_DATEIEN.map(datei => cache.add(datei)));
+  })());
+});
+
+self.addEventListener('activate', event => {
+  event.waitUntil((async () => {
+    const namen = await caches.keys();
+    await Promise.all(namen
+      .filter(name => name.startsWith('mein-begleiter-praxistest-cache') && name !== CACHE)
+      .map(name => caches.delete(name)));
+    await self.clients.claim();
+  })());
+});
+
+self.addEventListener('message', event => {
+  if (event.data?.type === 'SKIP_WAITING') self.skipWaiting();
+});
+
+self.addEventListener('fetch', event => {
+  if (event.request.method !== 'GET') return;
+  const url = new URL(event.request.url);
+  if (url.origin !== self.location.origin || !url.pathname.startsWith(BASIS)) return;
+
+  if (event.request.mode === 'navigate') {
+    event.respondWith((async () => {
+      try {
+        const antwort = await fetch(event.request);
+        const cache = await caches.open(CACHE);
+        cache.put(BASIS + 'index.html', antwort.clone());
+        return antwort;
+      } catch {
+        return (await caches.match(BASIS + 'index.html')) ||
+          (await caches.match(BASIS + 'offline.html'));
+      }
+    })());
+    return;
+  }
+
+  event.respondWith((async () => {
+    const gespeichert = await caches.match(event.request);
+    if (gespeichert) return gespeichert;
+    const antwort = await fetch(event.request);
+    if (antwort.ok) {
+      const cache = await caches.open(CACHE);
+      cache.put(event.request, antwort.clone());
+    }
+    return antwort;
+  })());
+});

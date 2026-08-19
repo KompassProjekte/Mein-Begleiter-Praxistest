@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>Prüfprotokoll – Mein Begleiter 1.8.3</title>
+  <title>Prüfprotokoll – Mein Begleiter 1.8.4</title>
   <style>
     body{max-width:900px;margin:32px auto;padding:0 24px;font:16px/1.55 system-ui;color:#173b39}
     h1,h2{color:#267c73} code{background:#edf3f1;padding:2px 5px} .ok{color:#20754f;font-weight:700}
@@ -12,30 +12,33 @@
 </head>
 <body>
   <h1>Prüfprotokoll · Mein Begleiter Praxistest</h1>
-  <p>Version 1.8.3 PWA – Öffentliche Praxistest-Version · 18.08.2026</p>
-  <h2>Umgesetzte mobile Korrekturen</h2>
+  <p>Version 1.8.4 PWA – Öffentliche Praxistest-Version · 18.08.2026</p>
+  <h2>Umgesetzter Android-Installationsfix</h2>
   <ul>
     <li>Datum und „Dein persönlicher Überblick“ stehen auf getrennten Zeilen.</li>
     <li>„Fragen für den nächsten Arzttermin“ bleibt auch mit langen Arzt- und Terminbezeichnungen innerhalb der Bildschirmbreite.</li>
     <li>„Mehr“ steht mobil im normalen Seitenfluss und kann dadurch keine Inhalte oder Schaltflächen überdecken.</li>
     <li>Leere Diagramme sind kompakt; bei vorhandenen Daten entfalten sie sich automatisch.</li>
     <li>Minimum-/Maximum-Felder, Tagescheck-Auswahl und Sicherungsbereiche wurden mobil verdichtet.</li>
-    <li>Berichte, Tagebuch und Buch verwenden dynamisch die Versionsangabe „1.8.3 PWA – Öffentliche Praxistest-Version“.</li>
+    <li>Berichte, Tagebuch und Buch verwenden dynamisch die Versionsangabe „1.8.4 PWA – Öffentliche Praxistest-Version“.</li>
     <li>Der App-Symbolsatz wurde für kleine Startbildschirmdarstellungen optimiert.</li>
+    <li>Der Android-Installationsknopf bleibt verborgen, bis Chrome das Ereignis für eine echte PWA-Installation bereitstellt.</li>
+    <li>Eine bloße Browser-Verknüpfung wird auf Android nicht mehr als Installationsweg empfohlen.</li>
   </ul>
   <h2>Technische Prüfungen</h2>
   <table>
     <tr><th>Prüfung</th><th>Ergebnis</th></tr>
     <tr><td>JavaScript-Syntax aller eingebetteten Skripte und des Service Workers</td><td class="ok">Bestanden</td></tr>
     <tr><td>Eindeutige HTML-IDs</td><td class="ok">Bestanden</td></tr>
-    <tr><td>Manifest gültig und gegenüber 1.8.2 unverändert</td><td class="ok">Bestanden</td></tr>
+    <tr><td>Manifest gültig; ID, Startadresse, Gültigkeitsbereich und Symbole auf GitHub Pages abgestimmt</td><td class="ok">Bestanden</td></tr>
     <tr><td>Speicherkennungen und Datenstrukturen unverändert</td><td class="ok">Bestanden</td></tr>
-    <tr><td>Programm-Cache</td><td><code>mein-begleiter-praxistest-cache-v1-8-3</code></td></tr>
+    <tr><td>Programm-Cache</td><td><code>mein-begleiter-praxistest-cache-v1-8-4</code></td></tr>
+    <tr><td>Pflichtdateien und fehlertolerante optionale Symbole im Service Worker getrennt</td><td class="ok">Bestanden</td></tr>
     <tr><td>Symbole 64, 180, 192 und 512 Pixel sowie maskierbares Symbol</td><td class="ok">Bestanden</td></tr>
     <tr><td>Responsive Regeln für 320, 360, 390 und 430 Pixel, Hoch- und Querformat</td><td class="ok">Quellcode- und Größenprüfung bestanden</td></tr>
   </table>
   <h2>Abschließende Sichtprüfung</h2>
-  <p>Die gerätebreitenbezogenen Regeln wurden geprüft. Eine reale Browser-Sichtprüfung auf den Zielgeräten muss nach dem Hochladen unter der bestehenden HTTPS-Adresse erfolgen. Erst danach soll die Crew-Freigabe erteilt werden.</p>
+  <p>Quellcode, Manifest, Symbolgrößen, relative Zielpfade, Cache-Wechsel und Paketstruktur wurden geprüft. Die abschließende Kontrolle „ohne Chrome-Zeichen, in der Android-App-Liste und ohne Adresszeile“ erfolgt nach dem Hochladen auf dem realen Android-Zielgerät.</p>
   <h2>Auslieferungszustand</h2>
   <p><strong>Auslieferungszustand: 0 persönliche Datensätze.</strong></p>
   <p>Lokale Testdaten einer bestehenden Installation werden durch das Programmupdate nicht gelöscht.</p>

@@ -1,0 +1,18 @@
+GitHub-Upload – Mein Begleiter 1.8.4
+
+1. ZIP-Datei auf dem Computer vollständig entpacken.
+2. Im Repository KompassProjekte/Mein-Begleiter-Praxistest den Inhalt des
+   entpackten Versionsordners in den Hauptzweig hochladen.
+3. index.html, manifest.webmanifest, service-worker.js und offline.html müssen
+   unmittelbar im Hauptverzeichnis des Repositorys liegen.
+4. Der Ordner icons muss als Ordner erhalten bleiben. Darin müssen liegen:
+   apple-touch-icon-180.png, favicon-64.png, icon-192.png, icon-512.png und
+   icon-maskable-512.png.
+5. Nicht nur die ZIP-Datei und nicht nur index.html hochladen.
+6. Änderungen übernehmen und warten, bis GitHub Pages den Einsatz erfolgreich
+   abgeschlossen hat.
+7. Startadresse:
+   https://kompassprojekte.github.io/Mein-Begleiter-Praxistest/
+8. Eine alte Android-Verknüpfung mit Chrome-Zeichen entfernen. Danach die Seite
+   in Chrome neu öffnen und ausschließlich den in der Anwendung eingeblendeten
+   Knopf „App installieren“ verwenden.

@@ -1,0 +1,13 @@
+Mein Begleiter 1.8.4 – korrigierte Installationsfehler
+
+1. Der Installationsknopf war sichtbar, obwohl Chrome noch keine echte PWA-
+   Installation angeboten hatte. Dadurch konnte eine Browser-Verknüpfung mit
+   Chrome-Zeichen entstehen.
+2. Der Android-Hinweis unterschied nicht eindeutig zwischen „App installieren“
+   und „Zum Startbildschirm hinzufügen“.
+3. Manifest-ID, Startadresse, Gültigkeitsbereich, Kurzbefehle und Symbolpfade
+   waren nur allgemein relativ statt eindeutig auf den GitHub-Pages-Pfad
+   /Mein-Begleiter-Praxistest/ festgelegt.
+4. Der Service Worker brach die gesamte Vorabablage ab, wenn eine einzelne
+   optionale Symboldatei fehlte.
+5. Der Programm-Cache wurde für Version 1.8.4 eindeutig erneuert.

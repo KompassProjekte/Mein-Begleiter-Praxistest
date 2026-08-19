@@ -7,7 +7,7 @@
       content="width=device-width,initial-scale=1,viewport-fit=cover"
     />
     <meta name="theme-color" content="#225b56" />
-    <title>Mein Begleiter 1.8.3 PWA – Öffentliche Praxistest-Version</title>
+    <title>Mein Begleiter 1.8.4 PWA – Öffentliche Praxistest-Version</title>
     <link rel="manifest" href="./manifest.webmanifest" />
     <link rel="icon" type="image/png" href="./icons/favicon-64.png" />
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon-180.png" />
@@ -1704,7 +1704,7 @@
           </button>
         </nav>
         <div class="seitenfuss">
-          <strong>Version 1.8.3 PWA · ÖFFENTLICHE PRAXISTEST-VERSION</strong
+          <strong>Version 1.8.4 PWA · ÖFFENTLICHE PRAXISTEST-VERSION</strong
           >Stand: 18.08.2026<br />Entwickelt von Lothar &amp; Nimbus
         </div>
       </aside>
@@ -2656,7 +2656,7 @@
                 <span>Persönlicher Browser-Speicher</span>
               </div>
               <p>
-                <strong>Mein Begleiter 1.8.3 PWA – Öffentliche Praxistest-Version</strong>
+                <strong>Mein Begleiter 1.8.4 PWA – Öffentliche Praxistest-Version</strong>
               </p>
               <p>
                 Ihre Einträge werden ausschließlich lokal im persönlichen
@@ -4015,7 +4015,7 @@
               return `<div class="tagebuch-eintrag"><div class="tagebuch-datum">${datumLang(e.datum)}</div><div class="tagebuch-text"><h5>${esc(ueberschrift)}</h5>${texte.join("") || "<p>Eintrag ohne weitere Beschreibung.</p>"}</div></div>`;
             })
             .join("");
-        html += `</div><p class="hinweis">Erstellt mit Mein Begleiter 1.8.3 PWA – Öffentliche Praxistest-Version · Lothar &amp; Nimbus</p>`;
+        html += `</div><p class="hinweis">Erstellt mit Mein Begleiter 1.8.4 PWA – Öffentliche Praxistest-Version · Lothar &amp; Nimbus</p>`;
         $("#berichtAusgabe").innerHTML = html;
         gespeichertenEntwurfAnzeigen();
       }
@@ -4077,7 +4077,7 @@
           });
         if (schluss)
           html += `<div class="buch-seite"><h4>Mein Rückblick und Ausblick</h4><div class="buch-schluss"><p>${esc(schluss)}</p></div></div>`;
-        html += `<p class="hinweis">Erstellt mit Mein Begleiter 1.8.3 PWA – Öffentliche Praxistest-Version · Lothar &amp; Nimbus · ${datumLang(heuteIso())}</p>`;
+        html += `<p class="hinweis">Erstellt mit Mein Begleiter 1.8.4 PWA – Öffentliche Praxistest-Version · Lothar &amp; Nimbus · ${datumLang(heuteIso())}</p>`;
         $("#berichtAusgabe").innerHTML = html;
       }
       function renderBericht() {
@@ -4343,7 +4343,7 @@
           });
         if (schluss)
           html += `<div class="buch-seite"><h4>Mein Rückblick und Ausblick</h4><div class="buch-schluss"><p>${esc(schluss)}</p></div></div>`;
-        html += `<p class="hinweis">${fassung === "lese" ? "Persönliche Leseausgabe – aus meinen eigenen Einträgen zusammengestellt. " : ""}Erstellt mit Mein Begleiter 1.8.3 PWA – Öffentliche Praxistest-Version · Lothar &amp; Nimbus · ${datumLang(heuteIso())}</p>`;
+        html += `<p class="hinweis">${fassung === "lese" ? "Persönliche Leseausgabe – aus meinen eigenen Einträgen zusammengestellt. " : ""}Erstellt mit Mein Begleiter 1.8.4 PWA – Öffentliche Praxistest-Version · Lothar &amp; Nimbus · ${datumLang(heuteIso())}</p>`;
         $("#berichtAusgabe").innerHTML = html;
         gespeichertenEntwurfAnzeigen();
       }
@@ -7987,7 +7987,7 @@
   }
   @media print{.pwa-leiste,.pwa-update,.pwa-dialog{display:none!important}}
 </style>
-<div class="pwa-leiste" aria-label="App-Status"><span class="pwa-edition"><span class="edition-lang">ÖFFENTLICHE PRAXISTEST-VERSION</span><span class="edition-kurz">PRAXISTEST</span></span><span class="pwa-status" id="pwaStatus">Online</span><button class="knopf pwa-install" id="pwaInstallieren" type="button">App installieren</button></div>
+<div class="pwa-leiste" aria-label="App-Status"><span class="pwa-edition"><span class="edition-lang">ÖFFENTLICHE PRAXISTEST-VERSION</span><span class="edition-kurz">PRAXISTEST</span></span><span class="pwa-status" id="pwaStatus">Online</span><button class="knopf pwa-install" id="pwaInstallieren" type="button" hidden>App installieren</button></div>
 <div class="pwa-update" id="pwaUpdate" role="status"><strong>Eine neue Version von Mein Begleiter ist verfügbar.</strong><p>Vor größeren Aktualisierungen empfehlen wir eine vollständige Sicherung.</p><div class="listen-aktionen"><button class="knopf klein" id="pwaJetzt" type="button">Jetzt aktualisieren</button><button class="knopf klein sekundaer" id="pwaSpaeter" type="button">Später</button></div></div>
 <dialog class="pwa-dialog" id="pwaWillkommen"><div class="dialog-inhalt"><h3>Willkommen beim Praxistest</h3><p>Diese Version startet vollständig leer. Alle Eingaben bleiben auf diesem Gerät, sofern du sie nicht selbst als Sicherung exportierst.</p><p>Die Anwendung ersetzt keine medizinische Beratung. Nach dem Test kannst du alle Testdaten unter „Sicherung“ vollständig löschen.</p></div><div class="dialog-fuss"><button class="knopf" id="pwaStart" type="button">Praxistest beginnen</button><button class="knopf sekundaer" id="pwaHinweisAus" type="button">Hinweis schließen</button></div></dialog>
 <dialog class="pwa-dialog" id="pwaFeedback"><div class="dialog-kopf"><h3>Praxistest &amp; Rückmeldung</h3><button type="button" id="pwaFeedbackZu">×</button></div><div class="dialog-inhalt pwa-feedback"><p>Diese Rückmeldung enthält keine Gesundheitsdaten aus der App.</p><label>Gerät<input id="fbGeraet" placeholder="z. B. Samsung Galaxy" /></label><label>Betriebssystem<input id="fbSystem" placeholder="z. B. Android" /></label><label>Browser<input id="fbBrowser" placeholder="z. B. Chrome" /></label><label>Installation gelungen<select id="fbInstall"><option>Nicht geprüft</option><option>Ja</option><option>Nein</option></select></label><label>Offlinebetrieb gelungen<select id="fbOffline"><option>Nicht geprüft</option><option>Ja</option><option>Nein</option></select></label><label>Getesteter Bereich<input id="fbBereich" placeholder="z. B. Termine und Dokumente" /></label><label>Fehlerbeschreibung<textarea id="fbFehler"></textarea></label><label>Verbesserungsvorschlag<textarea id="fbVorschlag"></textarea></label></div><div class="dialog-fuss"><button class="knopf sekundaer" id="fbText" type="button">Rückmeldung speichern</button><button class="knopf" id="fbJson" type="button">JSON speichern</button></div></dialog>
@@ -8001,13 +8001,14 @@
   const onlineStatus = () => { status.textContent = navigator.onLine ? 'Online' : 'Offline – Daten bleiben auf diesem Gerät'; status.style.background = navigator.onLine ? '#fff' : '#fff0c7'; status.classList.toggle('offline', !navigator.onLine); };
   addEventListener('online', onlineStatus); addEventListener('offline', onlineStatus); onlineStatus();
   const standalone = matchMedia('(display-mode: standalone)').matches || navigator.standalone === true;
-  if (standalone) install.hidden = true;
-  addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEreignis = e; install.hidden = false; });
-  addEventListener('appinstalled', () => { install.hidden = true; installEreignis = null; if (typeof toast === 'function') toast('App wurde installiert.'); });
+  const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
+  if (standalone) { install.hidden = true; status.textContent = 'App-Modus'; }
+  else if (ios) { install.hidden = false; install.textContent = 'Zum Home-Bildschirm'; }
+  addEventListener('beforeinstallprompt', e => { e.preventDefault(); installEreignis = e; install.textContent = 'App installieren'; install.hidden = false; });
+  addEventListener('appinstalled', () => { install.hidden = true; installEreignis = null; status.textContent = 'App installiert'; if (typeof toast === 'function') toast('App wurde als eigenständige Anwendung installiert.'); });
   install.addEventListener('click', async () => {
     if (installEreignis) { installEreignis.prompt(); await installEreignis.userChoice; return; }
-    const ios = /iphone|ipad|ipod/i.test(navigator.userAgent);
-    alert(ios ? 'Auf iPhone oder iPad: Teilen antippen und anschließend „Zum Home-Bildschirm“ wählen.' : 'Im Browsermenü „App installieren“ oder „Zum Startbildschirm hinzufügen“ wählen. Unter Windows kann auch das Installationssymbol in der Adresszeile verwendet werden.');
+    alert(ios ? 'Auf iPhone oder iPad: Teilen antippen und anschließend „Zum Home-Bildschirm“ wählen.' : 'Chrome hat die echte App-Installation noch nicht freigegeben. Bitte die Seite online neu laden und warten, bis hier „App installieren“ erscheint. Nicht „Zum Startbildschirm hinzufügen“ wählen – das erzeugt nur eine Browser-Verknüpfung.');
   });
   const updateBox = document.getElementById('pwaUpdate');
   document.getElementById('pwaSpaeter').addEventListener('click', () => updateBox.classList.remove('zeigen'));
@@ -8030,7 +8031,7 @@
     const ziel = document.querySelector('#seite-cockpit .kopf-aktionen'); if (ziel) ziel.appendChild(feedbackKnopf);
     const dialog = document.getElementById('pwaFeedback'); feedbackKnopf.addEventListener('click', () => dialog.showModal()); document.getElementById('pwaFeedbackZu').addEventListener('click', () => dialog.close());
     const wert = id => document.getElementById(id).value;
-    const rueckmeldung = () => ({version:'Mein Begleiter 1.8.3 PWA – Öffentliche Praxistest-Version',erstellt:new Date().toISOString(),geraet:wert('fbGeraet'),betriebssystem:wert('fbSystem'),browser:wert('fbBrowser'),installation:wert('fbInstall'),offlinebetrieb:wert('fbOffline'),getesteterBereich:wert('fbBereich'),fehler:wert('fbFehler'),verbesserungsvorschlag:wert('fbVorschlag'),hinweis:'Keine Gesundheitsdaten automatisch aufgenommen.'});
+    const rueckmeldung = () => ({version:'Mein Begleiter 1.8.4 PWA – Öffentliche Praxistest-Version',erstellt:new Date().toISOString(),geraet:wert('fbGeraet'),betriebssystem:wert('fbSystem'),browser:wert('fbBrowser'),installation:wert('fbInstall'),offlinebetrieb:wert('fbOffline'),getesteterBereich:wert('fbBereich'),fehler:wert('fbFehler'),verbesserungsvorschlag:wert('fbVorschlag'),hinweis:'Keine Gesundheitsdaten automatisch aufgenommen.'});
     const laden = (inhalt,name,typ) => { const a=document.createElement('a'); a.href=URL.createObjectURL(new Blob([inhalt],{type:typ})); a.download=name; a.click(); setTimeout(()=>URL.revokeObjectURL(a.href),1000); };
     document.getElementById('fbJson').addEventListener('click', () => laden(JSON.stringify(rueckmeldung(),null,2),'Mein_Begleiter_Praxistest_Rueckmeldung.json','application/json'));
     document.getElementById('fbText').addEventListener('click', () => { const r=rueckmeldung(); laden(Object.entries(r).map(([k,v])=>k+': '+v).join('\n'),'Mein_Begleiter_Praxistest_Rueckmeldung.txt','text/plain'); });
