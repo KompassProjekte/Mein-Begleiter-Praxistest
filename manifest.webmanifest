@@ -1,11 +1,11 @@
 {
-  "id": "./",
+  "id": "./?app-id=mein-begleiter-oeffentlicher-praxistest-v1912510",
   "name": "Mein Begleiter – Öffentlicher Praxistest",
   "short_name": "Mein Begleiter",
   "description": "Öffentliche, installierbare Praxistest-App für Tagebuch, Gesundheit, Alltag und Erinnerungen. Die Daten bleiben lokal auf dem Gerät.",
   "lang": "de-DE",
   "dir": "ltr",
-  "start_url": "./?source=pwa",
+  "start_url": "./?source=pwa&edition=oeffentlicher-praxistest",
   "scope": "./",
   "display": "standalone",
   "display_override": [

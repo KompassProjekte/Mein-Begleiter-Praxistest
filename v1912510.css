@@ -208,6 +208,10 @@
   z-index: 90;
   box-shadow: 0 5px 18px rgba(3, 61, 59, .24);
 }
+
+/* Unter den festen Smartphone-Bedienelementen bleibt genügend freier
+   Scrollraum, damit der letzte Inhalt vollständig hervorgeholt werden kann. */
+@media(max-width:620px){html.v186-handy main{padding-bottom:max(140px,calc(128px + env(safe-area-inset-bottom)))!important;scroll-padding-bottom:140px!important}}
 .v1912510-nach-oben[hidden] { display: none !important; }
 @media print { .v1912510-nach-oben { display: none !important; } }
 
@@ -285,3 +289,19 @@ html.v1912510-smartphone #v19121MobilMenue .v19121-menuliste button{min-height:5
 }
 @media(max-width:370px){html.v1912510-smartphone #v19121MobilMenue .v19121-menuliste{grid-template-columns:1fr!important}}
 @media print{html.v1912510-smartphone #v19121MobilMenuknopf,html.v1912510-smartphone #v19121MobilMenue{display:none!important}}
+
+/* Trennungskorrektur und verbindliche große Smartphone-Bedienung. */
+@media(max-width:620px){
+  html.v1912510-smartphone main,html.v186-handy main{padding-bottom:max(140px,calc(128px + env(safe-area-inset-bottom)))!important;scroll-padding-bottom:140px!important}
+  html.v1912510-smartphone #v19121MobilMenuknopf{min-height:54px!important;padding:12px 18px!important;font-size:1.05rem!important}
+  html.v1912510-smartphone #v19121MobilMenue[open]{height:calc(100dvh - max(12px,env(safe-area-inset-top)) - max(12px,env(safe-area-inset-bottom)))!important;min-height:0!important}
+  html.v1912510-smartphone #v19121MobilMenue .v19121-menukopf{min-height:68px!important;padding:10px 14px!important;font-size:1.08rem!important}
+  html.v1912510-smartphone #v19121MobilMenue .v1912510-menue-logo{width:46px!important;height:46px!important}
+  html.v1912510-smartphone #v19121MobilMenue .v19121-menukopf button{min-width:52px!important;width:52px!important;min-height:52px!important;height:52px!important;font-size:1.35rem!important}
+  html.v1912510-smartphone #v19121MobilMenue .v19121-menuliste{gap:10px!important;padding:12px!important;align-content:start!important}
+  html.v1912510-smartphone #v19121MobilMenue .v19121-menuliste button{min-height:70px!important;padding:12px 10px!important;font-size:1.04rem!important;line-height:1.28!important;border-radius:13px!important}
+}
+@media(orientation:landscape) and (max-height:650px){
+  html.v1912510-smartphone #v19121MobilMenue .v19121-menuliste{grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:8px!important;padding:8px!important}
+  html.v1912510-smartphone #v19121MobilMenue .v19121-menuliste button{min-height:58px!important;padding:8px!important;font-size:.98rem!important}
+}

@@ -137,7 +137,8 @@
   });
 
   // Gemeinsame Schriftgrößensteuerung für Einstellungen und Hilfe.
-  const schriftKey = "mein-begleiter-schriftgroesse";
+  const schriftKey = "mein-begleiter-oeffentlich-schriftgroesse";
+  const schriftAltKey = "mein-begleiter-schriftgroesse";
   const schriftAnwenden = wert => {
     const erlaubt = ["standard", "gross", "sehr-gross"].includes(wert) ? wert : "gross";
     document.documentElement.dataset.schrift = erlaubt;
@@ -176,7 +177,7 @@
       if (b) schriftAnwenden(b.dataset.v19125Schrift);
     });
   }
-  schriftAnwenden(localStorage.getItem(schriftKey) || "gross");
+  schriftAnwenden(localStorage.getItem(schriftKey) || localStorage.getItem(schriftAltKey) || "gross");
 
   // Schnelle Mehrfacherfassung von Vitalwerten als eigener, kleiner Dialog.
   const vitalDialog = document.createElement("dialog");
@@ -575,7 +576,7 @@
     q('#v1912510SystemStart').addEventListener('click', async () => {
       const ergebnis = q('#v1912510SystemErgebnis');
       const ok = [], hinweise = [];
-      const statischeVersion = qa('link[href],script[src]').some(el => (el.getAttribute('href') || el.getAttribute('src') || '').includes('public-3'));
+      const statischeVersion = qa('link[href],script[src]').some(el => (el.getAttribute('href') || el.getAttribute('src') || '').includes('public-4'));
       statischeVersion ? ok.push('Programmdateien gehören zur aktuellen öffentlichen Praxistest-Version.') : hinweise.push('Die aktuelle öffentliche Praxistest-Version ist noch nicht geladen. App einmal vollständig neu laden.');
       if ('serviceWorker' in navigator) ok.push(navigator.serviceWorker.controller ? 'PWA-Service-Worker ist aktiv.' : 'PWA-Service-Worker wird unterstützt; nach dem nächsten Neustart wird er aktiv.');
       else hinweise.push('Dieser Browser unterstützt keine installierbare PWA.');

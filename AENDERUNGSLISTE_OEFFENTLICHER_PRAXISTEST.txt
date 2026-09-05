@@ -18,3 +18,8 @@ Smartphone-Menü-Korrektur 3
 - Menüfelder, Beschriftungen, Buch-Kompass, Menüknopf und Schließen-Schaltfläche wurden vergrößert.
 - Im Hochformat bleiben zwei Spalten erhalten; im Querformat werden drei kompakte Spalten verwendet.
 - Das Menü bleibt in beiden Ausrichtungen vollständig scrollbar.
+Trennungskorrektur 4
+- Der öffentliche Praxistest besitzt eine eindeutige Installationskennung.
+- Die Schriftgrößen-Einstellung wird getrennt von der persönlichen App gespeichert.
+- Eine vorhandene bisherige Schriftwahl wird einmalig und verlustfrei übernommen.
+- Zusätzlicher Scrollraum verhindert, dass feste Smartphone-Schaltflächen den letzten Seiteninhalt verdecken.
