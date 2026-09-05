@@ -1,12 +1,12 @@
-const CACHE = 'mein-begleiter-oeffentlich-cache-v1-9-1-2-5-10-praxistest-1';
+const CACHE = 'mein-begleiter-oeffentlich-cache-v1-9-1-2-5-10-praxistest-2';
 const BASIS = new URL('./', self.location.href).pathname;
 const PFLICHTDATEIEN = [
   BASIS,
   BASIS + 'index.html',
   BASIS + 'v19124.css',
   BASIS + 'v19124.js',
-  BASIS + 'v1912510.css?v=app-6',
-  BASIS + 'v1912510.js?v=app-6',
+  BASIS + 'v1912510.css?v=public-2',
+  BASIS + 'v1912510.js?v=public-2',
   BASIS + 'manifest.webmanifest',
   BASIS + 'offline.html'
 ];

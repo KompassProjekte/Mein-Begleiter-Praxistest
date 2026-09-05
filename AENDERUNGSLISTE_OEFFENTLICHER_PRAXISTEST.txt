@@ -9,3 +9,7 @@ MEIN BEGLEITER 1.9.1.2.5.10 – ÖFFENTLICHER PRAXISTEST
 - Buch-Kompass und Titelblatt „Meine Geschichten“ übernommen.
 - Verschlüsselte vollständige Sicherung, Gerätewechsel und Systemprüfung enthalten.
 - Öffentliche Einführungs-, Datenschutz- und Editionshinweise ergänzt.
+Markenkopf-Korrektur 2
+- Die kleinen Buch-Kompass-Symbole stehen nun direkt links und rechts neben „MEIN“.
+- „BEGLEITER“ steht darunter frei und bleibt auch in der schmalen Tablet-Seitenleiste vollständig lesbar.
+- Der PWA-Zwischenspeicher wurde erneuert, damit die Änderung auf installierten Geräten zuverlässig ankommt.

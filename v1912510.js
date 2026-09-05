@@ -38,6 +38,24 @@
     img.alt = '';
     img.setAttribute('aria-hidden', 'true');
   });
+  // Die beiden kleinen Signets rahmen nur das kurze Wort „MEIN“ ein.
+  // Dadurch bleiben sie auch in der schmalen Tablet-Seitenleiste vollständig
+  // sichtbar; „BEGLEITER“ erhält darunter eine eigene, ruhige Zeile.
+  const markenTitel = q('.marke .marken-titel');
+  if (markenTitel && !q('.v1912510-mein-zeile', markenTitel)) {
+    const symbole = qa('.bildmarke', markenTitel);
+    const titel = q('h1', markenTitel);
+    if (symbole.length === 2 && titel) {
+      const zeile = document.createElement('div');
+      zeile.className = 'v1912510-mein-zeile';
+      const mein = document.createElement('span');
+      mein.className = 'v1912510-mein';
+      mein.textContent = 'MEIN';
+      zeile.append(symbole[0], mein, symbole[1]);
+      titel.textContent = 'BEGLEITER';
+      markenTitel.prepend(zeile);
+    }
+  }
   const mobilMarke = q('.mobilkopf strong');
   if (mobilMarke) mobilMarke.innerHTML = '<img class="v1912510-mobil-logo" src="./icons/icon-192.png" alt=""> <span>Mein Begleiter</span>';
   const mobilMenueMarke = q('#v19121MobilMenue .v19121-menukopf strong');
@@ -557,7 +575,7 @@
     q('#v1912510SystemStart').addEventListener('click', async () => {
       const ergebnis = q('#v1912510SystemErgebnis');
       const ok = [], hinweise = [];
-      const statischeVersion = qa('link[href],script[src]').some(el => (el.getAttribute('href') || el.getAttribute('src') || '').includes('app-6'));
+      const statischeVersion = qa('link[href],script[src]').some(el => (el.getAttribute('href') || el.getAttribute('src') || '').includes('public-2'));
       statischeVersion ? ok.push('Programmdateien gehören zur aktuellen öffentlichen Praxistest-Version.') : hinweise.push('Die aktuelle öffentliche Praxistest-Version ist noch nicht geladen. App einmal vollständig neu laden.');
       if ('serviceWorker' in navigator) ok.push(navigator.serviceWorker.controller ? 'PWA-Service-Worker ist aktiv.' : 'PWA-Service-Worker wird unterstützt; nach dem nächsten Neustart wird er aktiv.');
       else hinweise.push('Dieser Browser unterstützt keine installierbare PWA.');
