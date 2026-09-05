@@ -1,11 +1,19 @@
-Mein Begleiter Praxistest
-Version 1.8.3 PWA
+MEIN BEGLEITER
+Version 1.9.1.2.5.10 – Öffentlicher Praxistest
+Für Windows-PC, Tablet und Smartphone · Stand: 04.09.2026
+Entwickelt von Lothar & Nimbus
 
-Dieses Paket muss vollständig unter einer eigenen HTTPS-Adresse beziehungsweise einem eigenen HTTPS-Pfad veröffentlicht werden. index.html nicht allein herauslösen.
+Diese öffentliche Praxistest-Version wird vollständig leer mit 0 Datensätzen
+und 0 Dokumenten ausgeliefert. Alle späteren Eingaben bleiben lokal im Speicher
+des verwendeten Geräts. Es findet keine automatische Synchronisation statt.
 
-Auslieferungszustand: 0 persönliche Datensätze.
+WICHTIG
+- Für den Praxistest möglichst erfundene oder anonymisierte Angaben verwenden.
+- Sicherungsdateien (.mbg), Dokumente und persönliche Inhalte niemals bei GitHub hochladen.
+- Eine verschlüsselte Testsicherung erstellen und deren Wiederherstellung prüfen.
+- Bei einem Gerätewechsel ausschließlich die verschlüsselte vollständige Sicherung verwenden.
+- Das Sicherungskennwort kann nicht wiederhergestellt werden.
 
-Version 1.8.3 korrigiert ausschließlich die im mobilen Praxistest festgestellten Darstellungs- und Platzprobleme.
-Statusanzeigen stehen im normalen Seitenfluss, der Kopf ist kompakter und das
-Feld „Mehr“ verschwindet bei geöffnetem Menü. Die Daten- und Speicherkennungen
-bleiben mit Version 1.8 und 1.8.1 vollständig kompatibel.
+Die persönliche Endfassung bleibt als getrennte Version unverändert erhalten.
+Die Anwendung ersetzt keine ärztliche Beratung, Diagnose oder Behandlung.
+Bei akuten Beschwerden ärztliche Hilfe holen; im medizinischen Notfall 112 anrufen.

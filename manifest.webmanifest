@@ -1,12 +1,12 @@
 {
-  "id": "/Mein-Begleiter-Praxistest/",
-  "name": "Mein Begleiter Praxistest",
-  "short_name": "Begleiter Test",
-  "description": "Leere öffentliche Testversion von Mein Begleiter. Alle Testdaten bleiben lokal auf dem Gerät.",
+  "id": "./",
+  "name": "Mein Begleiter – Öffentlicher Praxistest",
+  "short_name": "Mein Begleiter",
+  "description": "Öffentliche, installierbare Praxistest-App für Tagebuch, Gesundheit, Alltag und Erinnerungen. Die Daten bleiben lokal auf dem Gerät.",
   "lang": "de-DE",
   "dir": "ltr",
-  "start_url": "/Mein-Begleiter-Praxistest/?source=pwa",
-  "scope": "/Mein-Begleiter-Praxistest/",
+  "start_url": "./?source=pwa",
+  "scope": "./",
   "display": "standalone",
   "display_override": [
     "standalone",
@@ -18,19 +18,19 @@
   "prefer_related_applications": false,
   "icons": [
     {
-      "src": "/Mein-Begleiter-Praxistest/icons/icon-192.png",
+      "src": "./icons/icon-192.png",
       "sizes": "192x192",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/Mein-Begleiter-Praxistest/icons/icon-512.png",
+      "src": "./icons/icon-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "any"
     },
     {
-      "src": "/Mein-Begleiter-Praxistest/icons/icon-maskable-512.png",
+      "src": "./icons/icon-maskable-512.png",
       "sizes": "512x512",
       "type": "image/png",
       "purpose": "maskable"
@@ -40,21 +40,21 @@
     {
       "name": "Meine Übersicht",
       "short_name": "Übersicht",
-      "url": "/Mein-Begleiter-Praxistest/#cockpit",
+      "url": "./#cockpit",
       "icons": [
         {
-          "src": "/Mein-Begleiter-Praxistest/icons/icon-192.png",
+          "src": "./icons/icon-192.png",
           "sizes": "192x192"
         }
       ]
     },
     {
-      "name": "Neuer Eintrag",
-      "short_name": "Eintrag",
-      "url": "/Mein-Begleiter-Praxistest/#eintrag",
+      "name": "Neue Einträge",
+      "short_name": "Neue Einträge",
+      "url": "./#eintraege",
       "icons": [
         {
-          "src": "/Mein-Begleiter-Praxistest/icons/icon-192.png",
+          "src": "./icons/icon-192.png",
           "sizes": "192x192"
         }
       ]

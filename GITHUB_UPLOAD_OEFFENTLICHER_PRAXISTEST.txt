@@ -1,0 +1,16 @@
+GITHUB-UPLOAD – ÖFFENTLICHER PRAXISTEST
+
+1. ZIP-Datei auf dem PC entpacken.
+2. Den Inhalt des entpackten Ordners in das Hauptverzeichnis des dafür
+   vorgesehenen öffentlichen GitHub-Repositorys hochladen.
+3. Gleichnamige Programmdateien ersetzen; keinen zusätzlichen Unterordner anlegen.
+4. Änderungen übernehmen und GitHub Pages veröffentlichen lassen.
+5. Zwei bis fünf Minuten warten und die Internetadresse neu öffnen.
+6. Unter Einstellungen die Systemprüfung durchführen.
+
+Niemals hochladen:
+- verschlüsselte Sicherungsdateien (.mbg)
+- persönliche Dokumente, Bilder oder Berichte
+- exportierte Nutzerdaten
+
+Die veröffentlichte Programmausgabe muss 0 Datensätze und 0 Dokumente enthalten.

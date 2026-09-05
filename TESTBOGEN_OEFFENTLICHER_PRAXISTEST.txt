@@ -1,0 +1,36 @@
+MEIN BEGLEITER – ÖFFENTLICHER PRAXISTEST
+Version 1.9.1.2.5.10
+
+Bitte möglichst mit erfundenen oder anonymisierten Angaben testen.
+
+1. Installation und Start
+[ ] Installation auf dem verwendeten Gerät möglich
+[ ] App startet leer
+[ ] Öffentlicher Praxistest wird sichtbar angezeigt
+[ ] App startet nach dem ersten Laden auch offline
+
+2. Bedienung
+[ ] PC-Seitenleiste vollständig bedienbar
+[ ] Tablet-Seitenleiste kompakt und scrollbar
+[ ] Smartphone-App-Kopf und Mobilmenü sichtbar
+[ ] Mobilmenü im Hoch- und Querformat scrollbar
+[ ] Keine Inhalte oder Schaltflächen werden verdeckt
+
+3. Funktionen
+[ ] Tages-Check speichern, ändern und löschen
+[ ] Eintrag, Termin und Frage speichern
+[ ] Vitalwerte speichern und im Verlauf anzeigen
+[ ] Behandlung und Medikamente erfassen
+[ ] Dokument hinzufügen und wieder öffnen
+[ ] Kosten erfassen
+[ ] Bericht, Tagebuch und Buch erstellen
+[ ] Titelblatt „Meine Geschichten“ erscheint
+
+4. Sicherheit
+[ ] Verschlüsselte vollständige Sicherung erstellen
+[ ] Sicherung mit richtigem Kennwort wiederherstellen
+[ ] Falsches Kennwort wird abgelehnt
+[ ] Systemprüfung ohne Datenänderung ausführbar
+
+Bitte keine Sicherungsdateien oder persönlichen Dokumente an das Projekt senden.
+Für Rückmeldungen genügen Gerät, Browser, betroffener Bereich und eine kurze Fehlerbeschreibung.

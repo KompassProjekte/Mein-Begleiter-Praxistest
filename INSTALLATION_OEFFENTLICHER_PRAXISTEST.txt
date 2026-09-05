@@ -1,0 +1,19 @@
+INSTALLATION – MEIN BEGLEITER ÖFFENTLICHER PRAXISTEST
+
+Windows-PC
+1. Veröffentlichte Internetadresse in Chrome oder Edge öffnen.
+2. „App installieren“ anklicken oder das Installationssymbol der Adresszeile verwenden.
+3. Installation bestätigen.
+
+Android-Tablet und Smartphone
+1. Veröffentlichte Internetadresse in Chrome oder Firefox öffnen.
+2. Browsermenü öffnen und „App installieren“ oder „Zum Startbildschirm“ wählen.
+3. App anschließend über das Buch-Kompass-Symbol starten.
+
+Nach der Installation
+- Unter Einstellungen die Systemprüfung durchführen.
+- Einen erfundenen Testeintrag speichern und nach einem Neustart kontrollieren.
+- Einmal offline starten.
+- Eine verschlüsselte vollständige Testsicherung erstellen.
+
+Die Anwendung wird mit 0 Datensätzen und 0 Dokumenten ausgeliefert.

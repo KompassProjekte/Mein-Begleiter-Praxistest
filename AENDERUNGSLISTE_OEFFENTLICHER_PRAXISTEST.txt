@@ -1,0 +1,11 @@
+MEIN BEGLEITER 1.9.1.2.5.10 – ÖFFENTLICHER PRAXISTEST
+
+- Abgeleitet aus der geprüften persönlichen App-Endfassung.
+- Vollständig leer: 0 Einträge, 0 Termine, 0 Fragen, 0 Medikamente,
+  0 Behandlungen, 0 Kosten und 0 Dokumente.
+- Eigene Speicherkennungen; keine Überschneidung mit der persönlichen App.
+- Aktuelles PC-, Tablet- und Smartphone-Design übernommen.
+- Dunkelgrüner Smartphone-App-Kopf und scrollbar bleibendes Mobilmenü.
+- Buch-Kompass und Titelblatt „Meine Geschichten“ übernommen.
+- Verschlüsselte vollständige Sicherung, Gerätewechsel und Systemprüfung enthalten.
+- Öffentliche Einführungs-, Datenschutz- und Editionshinweise ergänzt.
