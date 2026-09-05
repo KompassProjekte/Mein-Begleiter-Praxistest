@@ -13,3 +13,8 @@ Markenkopf-Korrektur 2
 - Die kleinen Buch-Kompass-Symbole stehen nun direkt links und rechts neben „MEIN“.
 - „BEGLEITER“ steht darunter frei und bleibt auch in der schmalen Tablet-Seitenleiste vollständig lesbar.
 - Der PWA-Zwischenspeicher wurde erneuert, damit die Änderung auf installierten Geräten zuverlässig ankommt.
+Smartphone-Menü-Korrektur 3
+- Das Smartphone-Menü nutzt die verfügbare Bildschirmhöhe jetzt deutlich besser aus.
+- Menüfelder, Beschriftungen, Buch-Kompass, Menüknopf und Schließen-Schaltfläche wurden vergrößert.
+- Im Hochformat bleiben zwei Spalten erhalten; im Querformat werden drei kompakte Spalten verwendet.
+- Das Menü bleibt in beiden Ausrichtungen vollständig scrollbar.

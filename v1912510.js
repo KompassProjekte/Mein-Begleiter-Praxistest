@@ -575,7 +575,7 @@
     q('#v1912510SystemStart').addEventListener('click', async () => {
       const ergebnis = q('#v1912510SystemErgebnis');
       const ok = [], hinweise = [];
-      const statischeVersion = qa('link[href],script[src]').some(el => (el.getAttribute('href') || el.getAttribute('src') || '').includes('public-2'));
+      const statischeVersion = qa('link[href],script[src]').some(el => (el.getAttribute('href') || el.getAttribute('src') || '').includes('public-3'));
       statischeVersion ? ok.push('Programmdateien gehören zur aktuellen öffentlichen Praxistest-Version.') : hinweise.push('Die aktuelle öffentliche Praxistest-Version ist noch nicht geladen. App einmal vollständig neu laden.');
       if ('serviceWorker' in navigator) ok.push(navigator.serviceWorker.controller ? 'PWA-Service-Worker ist aktiv.' : 'PWA-Service-Worker wird unterstützt; nach dem nächsten Neustart wird er aktiv.');
       else hinweise.push('Dieser Browser unterstützt keine installierbare PWA.');
