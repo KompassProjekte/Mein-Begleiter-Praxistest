@@ -23,3 +23,9 @@ Trennungskorrektur 4
 - Die Schriftgrößen-Einstellung wird getrennt von der persönlichen App gespeichert.
 - Eine vorhandene bisherige Schriftwahl wird einmalig und verlustfrei übernommen.
 - Zusätzlicher Scrollraum verhindert, dass feste Smartphone-Schaltflächen den letzten Seiteninhalt verdecken.
+Rückmeldeseite und Begleitflyer 5
+- Neue datensparsame Rückmeldeseite für Smartphone, Tablet und PC ergänzt.
+- Rückmeldungen werden nicht automatisch übertragen; Teilen, Kopieren oder Speichern erfolgt bewusst durch die testende Person.
+- Eigener QR-Code führt direkt zur Rückmeldeseite.
+- Service-Worker-Zwischenspeicher erneuert und Offline-Zugriff auf die Rückmeldeseite vorbereitet.
+- Öffentliches Begleitblatt als professioneller A4-Flyer mit echten App-Ansichten neu gestaltet.

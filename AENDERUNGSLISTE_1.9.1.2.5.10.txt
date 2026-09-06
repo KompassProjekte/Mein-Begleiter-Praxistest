@@ -1,0 +1,133 @@
+MEIN BEGLEITER 1.9.1.2.5.10 - PC-ABSCHLUSSKORREKTUR
+Stand: 03.09.2026
+
+LETZTE PC-TESTKORREKTUREN
+- Das bestätigte Titelblatt „Meine Geschichten“ ist in Original-Tagebuch,
+  persönlicher Leseausgabe und Familienausgabe eingebaut.
+- Titelblatt-Unterzeile: „Gesundheit, Alltag und Erinnerungen“.
+- Das Buch-Kompass-Signet, der ausgewählte Zeitraum, die farblich
+  unterscheidbare Editionsplakette und die ruhige Horizontgestaltung werden
+  auch in gespeicherte Buchdateien übernommen.
+- Gemeinsame Fußzeile: „Erstellt mit Mein Begleiter · Entwickelt von Lothar & Nimbus“.
+- In den Verlaufsdiagrammen steht die Uhrzeit ohne das Wort „Uhr“ in einer
+  eigenen Zeile unter dem Datum.
+- Druckkorrektur: Das Titelblatt wird nach jeder Neuerzeugung synchron
+  fertiggestellt. Die Druckvorschau kann dadurch nicht mehr auf die alte
+  Titelseite ohne Signet, Horizont und Fußzeile zurückfallen.
+- Leere Felder für Buchtitel und Untertitel werden sichtbar mit „Meine
+  Geschichten“ und „Gesundheit, Alltag und Erinnerungen“ vorbelegt.
+- Buchtext-Korrekturen werden getrennt von den Originaleinträgen gespeichert und
+  standardmäßig in Original-Tagebuch, persönlicher Leseausgabe und Familienausgabe
+  gemeinsam verwendet. Optional ist eine Korrektur nur für eine Buchfassung möglich.
+- Alte vollständige HTML-Entwürfe frieren das Titelblatt und Layout nicht mehr ein.
+- Alle drei Buchfassungen werden mit dem aktuellen, einheitlichen Titelblatt aufgebaut.
+- Der Buchdruck verwendet in allen drei Buchfassungen eine kompakte Grundschrift von genau 10,00 pt, kleinere
+  Datumszeilen und engere, weiterhin gut lesbare Abstände.
+- „Was mir wichtig war“ entspricht typografisch „Wichtiger Moment“ und „Wendepunkt“.
+- Eine ältere 1,08-rem-Unterregel der Lese- und Familienausgabe wurde aufgehoben;
+  alle eigentlichen Buchtexte besitzen dadurch tatsächlich dieselbe 10,00-pt-Größe.
+- Diagramme werden im Verlaufdruck einheitlich zu drei Stück je Seite angeordnet.
+- Der Behandlungsverlauf beginnt stets auf einer neuen Seite.
+- Auf der Verlaufseite wurde der zusätzliche Tages-Check-Knopf entfernt.
+- Im Buchzentrum bleibt die Bedienleiste beim Scrollen sichtbar und enthält „Nach oben“.
+- „Nächster Termin“ wird chronologisch aus allen kommenden Terminen ermittelt.
+- Zukünftige Einträge mit Arzt/Stelle und dem ausdrücklichen Status „Geplant“
+  oder „Bestätigt“ werden auch dann berücksichtigt, wenn ein älterer Datenstand
+  sie noch als allgemeinen Eintrag gespeichert hat. Tageschecks, Vitalwerte und
+  Kosten sind weiterhin sicher ausgeschlossen.
+- Beim Ändern älterer Einträge kann die Zuordnung jetzt zwischen „Normaler
+  Eintrag / Erlebnis“ und „Als Termin kennzeichnen“ geändert werden. Inhalte,
+  Datum und Uhrzeit bleiben erhalten. Beim Lösen eines Termins bleiben Fragen
+  als offene, nicht zugeordnete Fragen bestehen.
+- In den Einstellungen steht eine nur lesende Systemprüfung für PWA, Speicher,
+  Datenbezüge, Dublettenhinweise, Dokumentablage und Sicherungstechnik bereit.
+- Meldet die Systemprüfung eine Frage zu einem nicht mehr vorhandenen Termin,
+  erklärt sie jetzt den Lösungsweg. „Frage jetzt zuordnen“ öffnet unmittelbar
+  die Terminübersicht und führt zu „Noch keinem Termin zugeordnet“.
+
+VERSIONSABGLEICH UND REGRESSIONSKORREKTUR
+- Abgleich mit der getesteten PC-Abschlussversion durchgeführt.
+- Mischstände aus neuer HTML-Datei und alten PWA-Dateien verhindert.
+- Zentralen JavaScript-Abbruch nach Bereinigung der Sicherungsansicht behoben.
+- Vitalwerte-Dialog und Speicherung wieder funktionsfähig.
+- Kostenbericht öffnet und erstellt seine Vorschau wieder.
+- Auf der Übersicht genau ein Tages-Check-Schnelleinstieg; im Verlauf keiner.
+- Tages-Check wird einschließlich versehentlich getrennter Teile am gleichen
+  Messzeitpunkt vollständig und dauerhaft gelöscht.
+- Offene Fragen enthalten wieder die Spalte Datum.
+- Diagramme werden im Hochformat untereinander, einheitlich drei je Seite gedruckt.
+- Alle Buchfassungen verwenden einen kompakten Buch-/Chronikstil mit Datum.
+- Automatische und eigene Buchtexte werden nicht doppelt ausgegeben.
+- Aussageleere Ersatztexte wurden aus Tagebuch und Buch entfernt.
+
+PC-ABSCHLUSSKORREKTUR NACH SICHTPRÜFUNG
+- Im Dialog „Eintrag ändern“ überdeckt die Bedienleiste keine Felder mehr.
+- Kopf und Schaltflächen bleiben erreichbar; nur der Formularinhalt scrollt.
+- Tabellenüberschrift „Eintrag / Maßnahme“ bildet auch Tages-Checks und Vitalwerte korrekt ab.
+- Behandlungsschritte besitzen ein verpflichtendes Uhrzeitfeld; Uhrzeit, Sortierung und Terminanzeige sind verbunden.
+- Reine Tages-Checks und Vitalwerte erscheinen nicht als geplante Termine oder Selbstbehandlungen.
+- DOCX-Dateien erhalten Word-Kennzeichnung und einen eindeutigen Downloadknopf statt zweier gleich wirkender Knöpfe.
+
+KOSTEN
+- Speicherablauf neu geordnet: speichern, Dialog schließen, danach Ansichten aktualisieren.
+- Direkte Fehlermeldung und Fokus auf das erste fehlende Pflichtfeld.
+- Rechnung, Rezept und Fahrtkosten verwenden dieselbe geprüfte Speicherlogik.
+- Kosten lassen sich direkt in der Kostenübersicht ändern und löschen.
+- Beim Löschen erfolgt eine Sicherheitsabfrage.
+- Druckknopf des Kostenberichts steht oben neben „Schließen“.
+- Dopplungswarnung bleibt unverändert erhalten; es wird nichts automatisch gelöscht.
+
+PFLICHTFELDER
+- Pflichtfelder werden anwendungsweit mit Sternchen, hellem Hintergrund und
+  dem Hinweis „Mit * gekennzeichnete Felder müssen ausgefüllt werden“ gekennzeichnet.
+- Ungültige Kostenfelder erhalten roten Rahmen und direkten Fehlertext.
+- Freiwillige Felder bleiben weiß und ausdrücklich als freiwillig bezeichnet.
+
+MEINE EINTRÄGE
+- Reine Tages-Checks werden sichtbar als „Tages-Check“ bezeichnet.
+- Die Bezeichnung ist nur eine Anzeige und erzeugt keinen Termin.
+- Vitalmessungen bleiben „Vitalwerte - Messung“.
+
+AUSGABEN
+- Das über dem Buch-Kompass-Signet eingeblendete Kreuz aus einer älteren Gestaltungsregel wurde entfernt.
+- Die Fußzeile des Titelblatts zeigt das kleine Kompasszeichen dezent vor und hinter „Entwickelt von Lothar & Nimbus“.
+- Die Bodenwelle ist nun eine drucksichere Vektorgrafik und erscheint auch ohne aktivierte Browser-Hintergrundgrafiken.
+
+PERSÖNLICHE APP-VERSION
+- Smartphone Hoch- und Querformat: kompakter dunkelgrüner App-Kopf mit Buch-Kompass.
+- Fester Menüknopf unten links; „Nach oben“ bleibt getrennt unten rechts erreichbar.
+- Das geöffnete Mobilmenü ist dunkelgrün, kontrastreich und besitzt einen eigenen scrollbar bleibenden Inhaltsbereich.
+- Im Querformat werden die Menüpunkte platzsparend dreispaltig angeordnet.
+- Alle sichtbaren alten Leuchtturm-Markenbilder werden beim Start durch das Buch-Kompass-Symbol ersetzt.
+- Samsung-A9-Darstellung im Hoch- und Querformat: dunkelgrüne Seitenleiste, kompakte feste Breite und eigener vertikaler Navigationsbereich.
+- Die Navigation bleibt vollständig erreichbar, während Markenbereich und Versionszeile stehen bleiben.
+- Alte Leuchtturmzeichen im sichtbaren App-Kopf wurden durch das Buch-Kompass-Symbol ersetzt.
+- Der Startdialog zeigt seine drei Auswahlknöpfe nun innerhalb des sichtbaren Inhaltsbereichs; Firefox auf Tablet und PC kann nicht mehr an einem leeren Dialogfuß hängen bleiben.
+- Der geprüfte PC-Stand wurde als eigener App-Zweig für Windows-PC, Samsung-Tablet und Smartphone übernommen.
+- Neues installierbares Buch-Kompass-Appsymbol; alte Kennzeichnungen „Wegbegleiter“ und „Praxistest“ sind entfernt.
+- Manifest und Service-Worker funktionieren unabhängig vom Namen des GitHub-Unterordners.
+- Installationsknopf und verständliche Hinweise für Windows, Android und iOS ergänzt.
+- Touch-Ziele, Bildschirmränder, Mobilmenü sowie Hoch- und Querformat zusätzlich abgesichert.
+- Die Uhrzeit in den Verlaufsdiagrammen steht ohne das Wort „Uhr“ unter dem Datum.
+- Eigene Installationsanleitung und kurze Gerätetestliste ergänzt.
+- „Bericht“ heißt jetzt „Bericht, Tagebuch & Buch“.
+- „Drucken“ heißt jetzt „Listen drucken“.
+- Verlauf und ausgewählte Diagramme werden zuverlässig im A4-Hochformat untereinander ausgegeben.
+- Der überholte Querformat-Hinweis und die widersprüchliche Querformatsteuerung wurden entfernt.
+- Listen, Übersichten und sachliche Berichte nutzen kompakte Abstände und kleinere Seitenränder.
+- Buch und Tagebuch behalten ein ruhiges, gut lesbares Layout.
+- Wiederholte persönliche Gedanken werden in der Buchausgabe nur einmal verwendet.
+- Der Tabellenkopf des sachlichen Berichts enthält in der Datumsspalte ausschließlich „Datum“.
+- Das funktional vorbereitete Titelblatt übernimmt Buchtitel, Untertitel und Zeitraum; die endgültige Gestaltung folgt nach dem Test.
+
+EINTRAGS- UND TERMINLOGIK
+- Die gespeicherte Eintragsart entscheidet dauerhaft über die Terminzuordnung.
+- Tages-Checks bleiben auch mit einer Maßnahme Tages-Checks.
+- Allgemeine Einträge und Vitalwerte werden nicht automatisch zu Terminen.
+- Ältere Daten und frühere Sicherungen erhalten beim Laden eine kompatible Einordnung ohne Inhaltsverlust.
+
+PWA UND DATEN
+- Versions-, Cache- und Manifestangaben auf 1.9.1.2.5.10 aktualisiert.
+- Bestehende Datenstruktur und verschlüsselte Sicherungen bleiben kompatibel.
+- Version 1.9.1.2.5.9 bleibt unverändert als Rückfallversion erhalten.
+- Tablet- und Smartphone-Anpassungen sind nicht Bestandteil dieser PC-Version.

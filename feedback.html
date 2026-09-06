@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#174d48">
+  <title>Rückmeldung – Mein Begleiter Praxistest</title>
+  <link rel="icon" href="./icons/favicon-64.png">
+  <style>
+    :root{--dunkel:#174d48;--gruen:#287a71;--mint:#eaf5f2;--gold:#d8a13a;--creme:#fffaf0;--tinte:#173b39;--linie:#c9ded9;--rot:#8d3531}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(145deg,#edf7f4,#fffaf1 58%,#f5ecdd);color:var(--tinte);font:18px/1.5 system-ui,-apple-system,"Segoe UI",sans-serif}
+    button,input,select,textarea{font:inherit}button{cursor:pointer}.kopf{background:var(--dunkel);color:#fff;padding:max(16px,env(safe-area-inset-top)) 20px 16px}.kopf-innen{max-width:920px;margin:auto;display:flex;align-items:center;gap:14px}.kopf img{width:58px;height:58px}.kopf strong{font-size:1.35rem}.kopf small{display:block;opacity:.85}
+    main{max-width:920px;margin:auto;padding:26px 18px 96px}.intro,.karte{background:rgba(255,255,255,.94);border:1px solid var(--linie);border-radius:22px;box-shadow:0 14px 34px rgba(23,77,72,.08)}.intro{padding:26px;margin-bottom:20px;border-top:7px solid var(--gold)}h1{font:800 clamp(2rem,7vw,3.2rem)/1.05 Georgia,serif;margin:0 0 10px}h2{font-size:1.3rem;margin:0 0 16px}.hinweis{background:#fff4e1;border-left:5px solid var(--gold);padding:14px 16px;border-radius:12px}.karte{padding:22px;margin-top:18px}.raster{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.feld{display:grid;gap:7px}.feld label,.legende{font-weight:750}.voll{grid-column:1/-1}input,select,textarea{width:100%;border:2px solid var(--linie);border-radius:13px;padding:13px;background:#fff;color:var(--tinte)}textarea{min-height:115px;resize:vertical}input:focus,select:focus,textarea:focus{outline:3px solid rgba(216,161,58,.35);border-color:var(--gruen)}
+    .checks{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.check{display:flex;gap:10px;align-items:center;padding:12px;border:1px solid var(--linie);border-radius:12px;background:#f9fcfb}.check input{width:22px;height:22px}.sterne{display:flex;flex-wrap:wrap;gap:8px}.sterne label{padding:11px 14px;border:2px solid var(--linie);border-radius:12px;background:#fff;font-weight:700}.sterne input{width:auto;margin-right:6px}.aktionen{display:flex;flex-wrap:wrap;gap:12px;margin-top:20px}.knopf{border:0;border-radius:14px;padding:14px 20px;font-weight:800;background:var(--dunkel);color:#fff;box-shadow:0 8px 20px rgba(23,77,72,.18)}.knopf.sek{background:#fff;color:var(--dunkel);border:2px solid var(--gruen)}.status{min-height:28px;margin-top:12px;font-weight:700;color:#216b45}.fuss{text-align:center;color:#526b67;margin-top:24px;font-size:.9rem}.zurueck{color:var(--dunkel);font-weight:800}
+    .wege{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;margin-top:22px}.weg{display:block;text-decoration:none;color:var(--tinte);background:var(--mint);border:2px solid var(--linie);border-radius:16px;padding:18px}.weg strong{display:block;font-size:1.08rem;color:var(--dunkel)}.weg span{display:block;margin-top:5px;font-size:.94rem}.schritte{display:grid;gap:11px}.schritt{display:grid;grid-template-columns:34px 1fr;gap:10px;align-items:start}.schritt::before{content:attr(data-n);display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:var(--gold);color:#fff;font-weight:800}
+    @media(max-width:650px){body{font-size:17px}.raster,.checks,.wege{grid-template-columns:1fr}.voll{grid-column:auto}.intro,.karte{padding:20px}.aktionen .knopf{width:100%}}
+  </style>
+</head>
+<body>
+  <header class="kopf"><div class="kopf-innen"><img src="./icons/icon-192.png" alt="Buch-Kompass"><div><strong>Mein Begleiter</strong><small>Öffentlicher Praxistest – Rückmeldung</small></div></div></header>
+  <main>
+    <section class="intro"><h1>Ihre Erfahrung hilft uns weiter.</h1><p>Wählen Sie, was Sie benötigen. Die Rückmeldung wird erst dann weitergegeben, wenn Sie selbst <b>„Teilen“</b>, <b>„Kopieren“</b> oder <b>„Als Text speichern“</b> wählen.</p><div class="hinweis"><b>Bitte keine persönlichen Gesundheitsdaten eintragen.</b> Die Rückmeldung ersetzt keine ärztliche Beratung.</div><div class="wege"><a class="weg" href="#formular"><strong>📝 Rückmeldung zur App geben</strong><span>Bedienung, Funktionen und Verbesserungsvorschläge festhalten.</span></a><a class="weg" href="#geraetewechsel"><strong>🔐 Datensicherung &amp; Gerätewechsel</strong><span>Die wichtigsten Schritte für ein neues Gerät.</span></a></div></section>
+    <section class="karte" id="geraetewechsel"><h2>Datensicherung &amp; Gerätewechsel</h2><p>Mein Begleiter überträgt persönliche Daten nicht automatisch. Für den Wechsel auf ein anderes Gerät verwenden Sie eine verschlüsselte Sicherungsdatei.</p><div class="schritte"><div class="schritt" data-n="1"><div><b>Auf dem bisherigen Gerät sichern</b> Eine verschlüsselte Sicherung erstellen und das Kennwort selbst festlegen.</div></div><div class="schritt" data-n="2"><div><b>Datei sicher übertragen</b> Die Sicherungsdatei auf das neue Gerät bringen; das Kennwort getrennt aufbewahren.</div></div><div class="schritt" data-n="3"><div><b>Auf dem neuen Gerät einlesen</b> Sicherungsdatei auswählen und Kennwort eingeben.</div></div><div class="schritt" data-n="4"><div><b>Prüfen und bestätigen</b> Die angezeigte Zusammenfassung kontrollieren und die Übernahme bewusst bestätigen.</div></div></div><div class="hinweis" style="margin-top:18px"><b>Wichtig:</b> Ohne das Kennwort kann die Sicherung nicht wiederhergestellt werden. Es erfolgt keine automatische Synchronisation.</div></section>
+    <form id="formular">
+      <section class="karte"><h2>1. Gerät und Nutzung</h2><div class="raster">
+        <div class="feld"><label for="geraet">Gerät</label><select id="geraet"><option>Smartphone</option><option>Tablet</option><option>Windows-PC / Laptop</option><option>Anderes Gerät</option></select></div>
+        <div class="feld"><label for="modus">Darstellung</label><select id="modus"><option>Installierte App</option><option>Im Browser</option><option>Nicht sicher</option></select></div>
+        <div class="feld"><label for="browser">Browser (optional)</label><input id="browser" placeholder="z. B. Chrome, Firefox, Edge"></div>
+        <div class="feld"><label for="system">Betriebssystem (optional)</label><input id="system" placeholder="z. B. Android, Windows"></div>
+      </div></section>
+      <section class="karte"><h2>2. Was haben Sie ausprobiert?</h2><div class="checks">
+        <label class="check"><input type="checkbox" value="Tages-Check">Tages-Check</label><label class="check"><input type="checkbox" value="Termine und Fragen">Termine und Fragen</label>
+        <label class="check"><input type="checkbox" value="Medikamente und Behandlung">Medikamente und Behandlung</label><label class="check"><input type="checkbox" value="Vitalwerte">Vitalwerte</label>
+        <label class="check"><input type="checkbox" value="Bericht, Tagebuch oder Buch">Bericht, Tagebuch oder Buch</label><label class="check"><input type="checkbox" value="Sicherung und Wiederherstellung">Sicherung und Wiederherstellung</label>
+        <label class="check"><input type="checkbox" value="Menü und Bedienung">Menü und Bedienung</label><label class="check"><input type="checkbox" value="Installation / App-Modus">Installation / App-Modus</label>
+      </div></section>
+      <section class="karte"><h2>3. Ihr Eindruck</h2><div class="feld"><span class="legende">Wie gut ließ sich die App bedienen?</span><div class="sterne">
+        <label><input type="radio" name="wertung" value="1 – schwierig">1</label><label><input type="radio" name="wertung" value="2">2</label><label><input type="radio" name="wertung" value="3">3</label><label><input type="radio" name="wertung" value="4">4</label><label><input type="radio" name="wertung" value="5 – sehr gut">5</label>
+      </div></div><div class="raster" style="margin-top:18px">
+        <div class="feld voll"><label for="gut">Was hat gut funktioniert?</label><textarea id="gut"></textarea></div>
+        <div class="feld voll"><label for="problem">Wo trat ein Problem auf?</label><textarea id="problem"></textarea></div>
+        <div class="feld voll"><label for="idee">Ihre Idee oder Ihr Verbesserungsvorschlag</label><textarea id="idee"></textarea></div>
+        <div class="feld voll"><label for="bild">Hinweis zu einem Screenshot (optional)</label><input id="bild" placeholder="z. B. Screenshot vorhanden; wird separat beigefügt"></div>
+      </div></section>
+      <section class="karte"><h2>4. Rückmeldung selbst weitergeben</h2><p>Es erfolgt keine automatische Übertragung. Wählen Sie selbst, wie Sie den Text weitergeben möchten.</p><div class="aktionen"><button class="knopf" type="button" id="teilen">Rückmeldung teilen</button><button class="knopf sek" type="button" id="kopieren">Text kopieren</button><button class="knopf sek" type="button" id="speichern">Als Text speichern</button></div><div id="status" class="status" role="status" aria-live="polite"></div></section>
+    </form>
+    <p class="fuss"><a class="zurueck" href="./">← Zurück zu Mein Begleiter</a><br>Öffentlicher Praxistest · Daten bleiben bis zur bewussten Weitergabe auf diesem Gerät.</p>
+  </main>
+  <script>
+    const $=s=>document.querySelector(s); const text=()=>{const getestet=[...document.querySelectorAll('.check input:checked')].map(x=>x.value).join(', ')||'keine Angabe';const wertung=document.querySelector('input[name="wertung"]:checked')?.value||'keine Angabe';return `RÜCKMELDUNG – MEIN BEGLEITER, ÖFFENTLICHER PRAXISTEST\n\nGerät: ${$('#geraet').value}\nDarstellung: ${$('#modus').value}\nBrowser: ${$('#browser').value||'keine Angabe'}\nBetriebssystem: ${$('#system').value||'keine Angabe'}\n\nAusprobiert: ${getestet}\nBedienbarkeit (1–5): ${wertung}\n\nWas hat gut funktioniert?\n${$('#gut').value||'keine Angabe'}\n\nWo trat ein Problem auf?\n${$('#problem').value||'keine Angabe'}\n\nVerbesserungsvorschlag:\n${$('#idee').value||'keine Angabe'}\n\nScreenshot-Hinweis: ${$('#bild').value||'keine Angabe'}\n\nHinweis: Diese Rückmeldung enthält keine persönlichen Gesundheitsdaten.`};
+    const status=m=>$('#status').textContent=m;
+    $('#kopieren').onclick=async()=>{try{await navigator.clipboard.writeText(text());status('✓ Rückmeldung wurde in die Zwischenablage kopiert.')}catch{status('Kopieren war nicht möglich. Bitte „Als Text speichern“ verwenden.')}};
+    $('#teilen').onclick=async()=>{if(!navigator.share){status('Teilen wird hier nicht unterstützt. Bitte „Text kopieren“ oder „Als Text speichern“ verwenden.');return}try{await navigator.share({title:'Rückmeldung – Mein Begleiter',text:text()});status('✓ Teilen-Dialog wurde geöffnet.')}catch(e){if(e.name!=='AbortError')status('Teilen war nicht möglich.')}};
+    $('#speichern').onclick=()=>{const blob=new Blob([text()],{type:'text/plain;charset=utf-8'}),a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='Rueckmeldung_Mein_Begleiter.txt';a.click();setTimeout(()=>URL.revokeObjectURL(a.href),1000);status('✓ Rückmeldung wurde als Textdatei bereitgestellt.')};
+  </script>
+</body>
+</html>

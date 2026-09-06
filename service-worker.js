@@ -1,12 +1,13 @@
-const CACHE = 'mein-begleiter-oeffentlich-cache-v1-9-1-2-5-10-trennung-4';
+const CACHE = 'mein-begleiter-oeffentlich-cache-v1-9-1-2-5-10-trennung-5';
 const BASIS = new URL('./', self.location.href).pathname;
 const PFLICHTDATEIEN = [
   BASIS,
   BASIS + 'index.html',
   BASIS + 'v19124.css',
   BASIS + 'v19124.js',
-  BASIS + 'v1912510.css?v=public-4',
-  BASIS + 'v1912510.js?v=public-4',
+  BASIS + 'v1912510.css?v=public-5',
+  BASIS + 'v1912510.js?v=public-5',
+  BASIS + 'feedback.html',
   BASIS + 'manifest.webmanifest',
   BASIS + 'offline.html'
 ];
@@ -49,13 +50,16 @@ self.addEventListener('fetch', event => {
 
   if (event.request.mode === 'navigate') {
     event.respondWith((async () => {
+      const ziel = url.pathname.endsWith('/feedback.html')
+        ? BASIS + 'feedback.html'
+        : BASIS + 'index.html';
       try {
         const antwort = await fetch(event.request);
         const cache = await caches.open(CACHE);
-        cache.put(BASIS + 'index.html', antwort.clone());
+        cache.put(ziel, antwort.clone());
         return antwort;
       } catch {
-        return (await caches.match(BASIS + 'index.html')) ||
+        return (await caches.match(ziel)) ||
           (await caches.match(BASIS + 'offline.html'));
       }
     })());

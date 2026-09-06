@@ -1,0 +1,63 @@
+MEIN BEGLEITER 1.9.1.2.5.10 - PC-ABSCHLUSSTEST
+
+VORHER
+[ ] Aktuelle verschlüsselte vollständige Sicherung erstellen.
+[ ] Version 1.9.1.2.5.9 als Rückfallversion aufbewahren.
+
+1. KOSTEN
+[ ] Rechnung speichern: Dialog schließt und Bestätigung erscheint.
+[ ] Rezept speichern: Dialog schließt und Bestätigung erscheint.
+[ ] Fahrtkosten speichern: Dialog schließt und Bestätigung erscheint.
+[ ] Ohne Betrag: Hinweis erscheint direkt im Dialog und Betragsfeld wird markiert.
+[ ] Ohne Bezeichnung: Hinweis erscheint direkt im Dialog und Bezeichnungsfeld wird markiert.
+[ ] Pflichtfelder besitzen Sternchen und hellen Hintergrund.
+[ ] Kostenposten direkt in der Kostenübersicht ändern.
+[ ] Kostenposten mit Sicherheitsabfrage löschen.
+[ ] Ein absichtlich doppelter Kostenposten wird nur gemeldet, nicht automatisch gelöscht.
+[ ] Kostenbericht zeigt den tatsächlichen Zeitraum.
+[ ] Druckknopf steht oben neben „Schließen“.
+
+2. TAGES-CHECK, EINTRÄGE UND VITALWERTE
+[ ] Tages-Check erscheint in „Meine Einträge“ mit der Bezeichnung „Tages-Check“.
+[ ] Tages-Check bleibt auch mit Text im Feld „Maßnahme“ ein Tages-Check.
+[ ] Nur ausdrücklich als Termin gespeicherte Einträge erscheinen in der Terminübersicht.
+[ ] Allgemeine Einträge werden nicht allein durch einen Maßnahmentext zu Terminen.
+[ ] Vitalmessung erscheint weiterhin als „Vitalwerte - Messung“.
+
+3. BEHANDLUNG
+[ ] Geplante Behandlung speichern.
+[ ] Erfolgte Behandlung mit Status „Erledigt“ speichern.
+[ ] Behandlung ändern und kontrolliert löschen.
+[ ] Pflichtfelder sind eindeutig gekennzeichnet.
+
+4. AUSGABEN
+[ ] Titelblatt zeigt „Meine Geschichten“ und „Gesundheit, Alltag und Erinnerungen“.
+[ ] Buch-Kompass-Signet, Editionsname, Zeitraum und gemeinsame Fußzeile erscheinen vollständig.
+[ ] Original-Tagebuch, persönliche Leseausgabe und Familienausgabe verwenden dasselbe Grunddesign.
+[ ] In Verlaufsdiagrammen steht die Uhrzeit ohne „Uhr“ unter dem Datum.
+[ ] Menüpunkt „Bericht, Tagebuch & Buch“ ist vorhanden.
+[ ] Persönliches Buch erstellen, als Datei speichern und drucken.
+[ ] Persönliches Tagebuch erstellen, als Datei speichern und drucken.
+[ ] Sachlichen Bericht erstellen, als Datei speichern und drucken.
+[ ] Menüpunkt „Listen drucken“ ist vorhanden.
+[ ] Termine, Fragen, Medikamente und Dokumentenliste ausgeben.
+[ ] Verlauf wird in A4-Hochformat mit kompakten Diagrammen untereinander ausgegeben.
+[ ] Ausgewählte Diagramme werden in A4-Hochformat untereinander ausgegeben.
+[ ] Der frühere Querformat-Hinweis ist nicht mehr vorhanden.
+[ ] Listen, Übersichten und sachliche Berichte nutzen die Seite papiersparend.
+[ ] Buch und Tagebuch behalten ein angenehm lesbares, großzügigeres Layout.
+[ ] Im Buch werden persönliche Gedanken nicht doppelt im Fließtext und im Hervorhebungsfeld wiederholt.
+[ ] Im sachlichen Bericht lautet die erste Tabellenüberschrift nur „Datum“.
+[ ] Das vorbereitete Titelblatt übernimmt Buchtitel, Untertitel und gewählten Zeitraum.
+
+5. SICHERHEIT UND ABSCHLUSS
+[ ] Systemprüfung ausführen: Ohne Auffälligkeit erscheint „Alle Prüfungen ohne Auffälligkeit abgeschlossen“.
+[ ] Falls eine verwaiste Frage gemeldet wird: „Frage jetzt zuordnen“ öffnet direkt den richtigen Bereich der Terminübersicht.
+[ ] Unter „Dokumente“ eine abgelegte Dokumentenmappe öffnen und mindestens eine Seite kontrollieren.
+[ ] Eine DOCX-Datei zeigt das Word-Symbol und nur „Word-Datei herunterladen“; anschließend mit Word oder LibreOffice öffnen.
+[ ] Verschlüsselte vollständige Sicherung erstellen.
+[ ] Sicherung in einer getrennten Testumgebung wiederherstellen.
+[ ] Einige Einträge, Kosten und Dokumente nach der Wiederherstellung vergleichen.
+[ ] Anwendung schließen und offline erneut öffnen.
+
+Gerätetests auf Tablet und Smartphone gehören ausdrücklich nicht zu diesem PC-Abschlusstest.
